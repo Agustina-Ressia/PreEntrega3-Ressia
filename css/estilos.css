@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/*
+Mediaquery
+Ej.:
+.element {
+  width: 100%;
+  @include breakpoint(768px) {
+    width: 50%;
+  }
+}
+*/
+/* Animacion */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&family=Saira+Stencil+One&display=swap");
 * {
   padding: 0%;
@@ -114,6 +125,7 @@ nav a {
   font-family: "Roboto", sans-serif;
 }
 
+/* Animacion */
 .cuadroPersonaje {
   animation-name: desliz;
   animation-duration: 5s;
@@ -183,8 +195,7 @@ nav a {
 
 .gridManga img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .primerManga {
@@ -266,6 +277,24 @@ nav a {
   text-align: left;
 }
 
+.anime {
+  animation-name: desliz;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation: desliz 1.5s ease;
+  animation-direction: normal;
+}
+
+@keyframes desliz {
+  0% {
+    opacity: 0%;
+    transform: translateX(-200);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .autorContenedor {
   margin: 20px 100px 20px 100px;
   flex-grow: 1;
@@ -319,13 +348,11 @@ footer {
     flex-direction: column;
   }
 }
-/* Estilos para el breakpoint mediano */
+/* Estilos para el breakpoint mediano*/
 @media (min-width: 601px) and (max-width: 900px) {
   .galeria {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    grid-template-columns: repeat(4, 102px);
-    grid-template-rows: repeat(3, 73px);
   }
   .inicio {
     flex-direction: column;
@@ -334,9 +361,7 @@ footer {
 /* Estilos para el breakpoint grande */
 @media (min-width: 901px) {
   .galeria {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    grid-template-columns: repeat(4, 24%);
-    grid-template-rows: repeat(3, 15%);
   }
 }/*# sourceMappingURL=estilos.css.map */

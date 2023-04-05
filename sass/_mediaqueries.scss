@@ -1,7 +1,7 @@
 /* MEDIAQUERIES */
 
 /* Estilos para el breakpoint pequeño */
-@media (min-width: 300px) and (max-width: 600px) {
+@include breakpointMinMax(300px,600px){
     .galeria {
         width: 100%;
         grid-template-columns: repeat(4, 89px);
@@ -13,26 +13,21 @@
     }
 }
 
-/* Estilos para el breakpoint mediano */
-@media (min-width: 601px) and (max-width: 900px) {
+/* Estilos para el breakpoint mediano*/
+@include breakpointMinMax(601px,900px){
     .galeria {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
-        grid-template-columns: repeat(4, 102px);
-        grid-template-rows: repeat(3, 73px);
     }
     .inicio {
         flex-direction: column;
     }
-
 }
 
 /* Estilos para el breakpoint grande */
-@media (min-width: 901px) {
+@include breakpointMin(901px) {
     .galeria {
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
-        grid-template-columns: repeat(4, 24%);
-        grid-template-rows: repeat(3, 15%);
     }
 }

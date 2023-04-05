@@ -1,0 +1,44 @@
+/*
+Mediaquery
+Ej.:
+.element {
+  width: 100%;
+  @include breakpoint(768px) {
+    width: 50%;
+  }
+}
+*/
+@mixin breakpointMin($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin breakpointMinMax($sizeMin, $sizeMax) {
+    @media (min-width: $sizeMin) and (max-width: $sizeMax) {
+        @content;
+    }
+}
+
+/* Animacion */
+@mixin animacion($clase) {
+    .#{$clase} {
+        animation-name: desliz;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation: desliz 1.5s ease;
+        animation-direction: normal;
+    }
+
+    @keyframes desliz {
+        0% {
+            opacity: 0%;
+            transform: translateX(-200);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

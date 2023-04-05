@@ -1,0 +1,46 @@
+.anime {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*text-align: center;*/
+    justify-content: space-between;
+}
+
+.animeContenedor {
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.temporada {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 27%;
+    margin: 5px;
+    padding: 0px 25px 25px 25px;
+
+    h3 {
+        text-align: center;
+        font-family: 'Saira Stencil One', cursive;
+        display: inline-block;
+    }
+    img {
+        display: block;
+        margin: auto;
+        width: auto;
+        margin: 10px;
+        border-radius: 8px;
+        border: 5px solid black;
+    }
+}
+
+
+.temporada:hover {
+    filter: grayscale(100%);
+}
+
+.episodios {
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}

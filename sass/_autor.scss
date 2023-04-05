@@ -1,0 +1,29 @@
+.autorContenedor {
+    margin: 20px 100px 20px 100px;
+    flex-grow: 1;
+}
+
+
+.autor {
+    img {
+        display: block;
+        margin: auto;
+        width: auto;
+        border-radius: 8px;
+        border: 5px solid black;
+    }
+}
+
+.otrosTrabajos {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 15px 15px 15px;
+
+    img {
+        display: block;
+        margin: auto;
+        width: 50%;
+        border-radius: 8px;
+        border: 5px solid black;
+    }
+}

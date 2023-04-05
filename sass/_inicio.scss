@@ -1,0 +1,22 @@
+.inicio {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+
+    img {
+        display: block;
+        margin: auto;
+        width: 70%;
+        border-radius: 8px;
+        border: 5px solid black;
+    }
+}
+
+.inicioCol1 {
+    flex-basis: 50%;
+}
+
+.inicioCol2 {
+    flex-grow: 1;
+}

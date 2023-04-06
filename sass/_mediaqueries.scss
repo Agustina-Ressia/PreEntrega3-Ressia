@@ -1,7 +1,7 @@
 /* MEDIAQUERIES */
 
 /* Estilos para el breakpoint pequeño */
-@include breakpointMinMax(300px,600px){
+@include breakpointMinMax(300px, 600px) {
     .galeria {
         width: 100%;
         grid-template-columns: repeat(4, 89px);
@@ -11,23 +11,59 @@
     .inicio {
         flex-direction: column;
     }
+
+    .autorInfo {
+        flex-direction: column;
+    }
+
+    .cuadroPersonaje {
+        flex-direction: column;
+    }
+
+    .mangaImg {
+        width: 200px;
+        margin: 0 auto;
+    }
 }
 
 /* Estilos para el breakpoint mediano*/
-@include breakpointMinMax(601px,900px){
+@include breakpointMinMax(601px, 900px) {
     .galeria {
-        width: 90%;
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 102px);
+        grid-template-rows: repeat(3, 73px);
+    }
+
+    .mangaImg {
+        width: 20px;
         margin: 0 auto;
     }
+
     .inicio {
         flex-direction: column;
+    }
+
+    .autorInfo {
+        flex-direction: column;
+    }
+
+    .cuadroPersonaje {
+        flex-direction: column;
+    }
+
+    .mangaImg {
+        width: 327px;
+        margin: 0 auto;
     }
 }
 
 /* Estilos para el breakpoint grande */
 @include breakpointMin(901px) {
     .galeria {
-        width: 80%;
-        margin: 0 auto;
+        width: 70%;
+        margin: 0 auto; 
+        grid-template-columns: repeat(4, 24%);
+        grid-template-rows: repeat(3, 15%);
     }
 }

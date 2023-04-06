@@ -105,6 +105,24 @@ nav a {
   flex-grow: 1;
 }
 
+.inicio {
+  animation-name: desliz;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation: desliz 1.5s ease;
+  animation-direction: normal;
+}
+
+@keyframes desliz {
+  0% {
+    opacity: 0%;
+    transform: translateX(-200);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .personajes {
   margin: 20px 100px 20px 100px;
 }
@@ -174,6 +192,24 @@ nav a {
   border: 5px solid black;
 }
 
+.mangaTodo {
+  animation-name: desliz;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation: desliz 1.5s ease;
+  animation-direction: normal;
+}
+
+@keyframes desliz {
+  0% {
+    opacity: 0%;
+    transform: translateX(-200);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .galeria {
   overflow: hidden;
   display: grid;
@@ -195,7 +231,8 @@ nav a {
 
 .gridManga img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .primerManga {
@@ -237,7 +274,6 @@ nav a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*text-align: center;*/
   justify-content: space-between;
 }
 
@@ -321,6 +357,24 @@ nav a {
   border: 5px solid black;
 }
 
+.autorContenedor {
+  animation-name: desliz;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation: desliz 1.5s ease;
+  animation-direction: normal;
+}
+
+@keyframes desliz {
+  0% {
+    opacity: 0%;
+    transform: translateX(-200);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 footer {
   background-color: rgb(54, 54, 54);
   padding: 8px;
@@ -347,21 +401,49 @@ footer {
   .inicio {
     flex-direction: column;
   }
+  .autorInfo {
+    flex-direction: column;
+  }
+  .cuadroPersonaje {
+    flex-direction: column;
+  }
+  .mangaImg {
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 /* Estilos para el breakpoint mediano*/
 @media (min-width: 601px) and (max-width: 900px) {
   .galeria {
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 102px);
+    grid-template-rows: repeat(3, 73px);
+  }
+  .mangaImg {
+    width: 20px;
     margin: 0 auto;
   }
   .inicio {
     flex-direction: column;
   }
+  .autorInfo {
+    flex-direction: column;
+  }
+  .cuadroPersonaje {
+    flex-direction: column;
+  }
+  .mangaImg {
+    width: 327px;
+    margin: 0 auto;
+  }
 }
 /* Estilos para el breakpoint grande */
 @media (min-width: 901px) {
   .galeria {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: repeat(3, 15%);
   }
 }/*# sourceMappingURL=estilos.css.map */

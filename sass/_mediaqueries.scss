@@ -26,9 +26,28 @@
         margin-bottom: 10px;
     }
 
-    .mangaContenedor{
+    .mangaContenedor {
         margin: 20px;
-    } 
+    }
+
+    .temporada {
+        min-width: 150px;
+        max-width: 500px;
+        justify-content: center;
+
+    }
+
+    .anime {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .animeImg img {
+        min-width: 250px;
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
 }
 
 /* Estilos para el breakpoint mediano*/
@@ -61,13 +80,31 @@
         width: 327px;
         margin: 0 auto;
     }
+
+
+    .temporada {
+        width: 550px;
+        justify-content: center;
+
+    }
+
+    .anime {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .animeImg img {
+        width: 400px;
+        margin: 0 auto;
+    }
 }
 
 /* Estilos para el breakpoint grande */
 @include breakpointMin(901px) {
     .galeria {
         width: 70%;
-        margin: 0 auto; 
+        margin: 0 auto;
         grid-template-columns: repeat(4, 24%);
         grid-template-rows: repeat(3, 15%);
     }

@@ -12,7 +12,22 @@
         flex-direction: column;
     }
 
+    .autorContenedor{
+        margin: 5px;
+        width: 200px;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .autorInfo {
+        margin: 10px;
+        width: 450px;
+        flex-direction: column;
+    }
+
+    .otrosTrabajos {
+        margin: 10px;
+        width: 450px;
         flex-direction: column;
     }
 

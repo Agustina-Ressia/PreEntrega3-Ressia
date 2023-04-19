@@ -401,20 +401,22 @@ footer {
   .inicio {
     flex-direction: column;
   }
+  /***************AUTOR******************/
   .autorContenedor {
     margin: 5px;
-    width: 200px;
+    width: 150px;
     flex-direction: column;
     text-align: center;
   }
   .autorInfo {
     margin: 10px;
-    width: 450px;
+    width: 420px;
+    justify-content: center;
     flex-direction: column;
   }
   .otrosTrabajos {
     margin: 10px;
-    width: 450px;
+    width: 420px;
     flex-direction: column;
   }
   /************PERSONAJES***************/

@@ -10,11 +10,14 @@
 
     .inicio {
         flex-direction: column;
+        img {
+            padding-bottom: 20px;
+        }
     }
 
-    /***************AUTOR******************/
+/***************AUTOR******************/
 
-    .autorContenedor {
+    .autorContenedor{
         margin: 5px;
         width: 150px;
         flex-direction: column;
@@ -22,39 +25,53 @@
     }
 
     .autorInfo {
-        margin: 10px;
+        margin: 8%;
         width: 420px;
         justify-content: center;
         flex-direction: column;
+        p {
+            padding: 10px;
+            text-align:justify;
+        }
     }
 
     .otrosTrabajos {
-        margin: 10px;
+        margin: 8%;
         width: 420px;
         flex-direction: column;
+        p {
+            padding: 10px;
+            text-align:justify;
+        }        
     }
 
-    /************PERSONAJES***************/
+/************PERSONAJES***************/
 
 
-    .cuadroPersonaje {
-        flex-direction: column;
+    .cuadroPersonaje{
+        flex-direction: column; 
         align-items: center;
         width: 350px;
     }
 
     .Personajes {
         width: 600px;
-        margin: 5px;
-        flex-direction: column;
+        margin: 10%;
+        flex-direction: column; 
     }
 
-    .descripcionPersonajes {
-        align-items: center;
-        flex-direction: column;
-    }
+    .personajes {
+        width: 600px;
+        margin: 10%;
+        flex-direction: column; 
+    }    
 
-    /************MANGA***************/
+    .descripcionPersonajes{
+        align-items: center;   
+        flex-direction: column; 
+        }
+
+/************MANGA***************/
 
 
     .mangaImg {
@@ -66,7 +83,7 @@
         margin: 20px;
     }
 
-    /************ANIME***************/
+/************ANIME***************/
 
     .temporada {
         width: 400px;
@@ -77,7 +94,9 @@
     .anime {
         flex-direction: column;
         align-items: center;
-
+        p {
+            margin:20px;
+        }
     }
 
     .animeImg img {

@@ -231,8 +231,7 @@ nav a {
 
 .gridManga img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .primerManga {
@@ -401,6 +400,9 @@ footer {
   .inicio {
     flex-direction: column;
   }
+  .inicio img {
+    padding-bottom: 20px;
+  }
   /***************AUTOR******************/
   .autorContenedor {
     margin: 5px;
@@ -409,15 +411,23 @@ footer {
     text-align: center;
   }
   .autorInfo {
-    margin: 10px;
+    margin: 8%;
     width: 420px;
     justify-content: center;
     flex-direction: column;
   }
+  .autorInfo p {
+    padding: 10px;
+    text-align: justify;
+  }
   .otrosTrabajos {
-    margin: 10px;
+    margin: 8%;
     width: 420px;
     flex-direction: column;
+  }
+  .otrosTrabajos p {
+    padding: 10px;
+    text-align: justify;
   }
   /************PERSONAJES***************/
   .cuadroPersonaje {
@@ -427,7 +437,12 @@ footer {
   }
   .Personajes {
     width: 600px;
-    margin: 5px;
+    margin: 10%;
+    flex-direction: column;
+  }
+  .personajes {
+    width: 600px;
+    margin: 10%;
     flex-direction: column;
   }
   .descripcionPersonajes {
@@ -450,6 +465,9 @@ footer {
   .anime {
     flex-direction: column;
     align-items: center;
+  }
+  .anime p {
+    margin: 20px;
   }
   .animeImg img {
     width: 350px;

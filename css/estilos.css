@@ -407,7 +407,7 @@ footer {
   /***************AUTOR******************/
   .autorContenedor {
     margin: 5px;
-    width: 150px;
+    width: 90%;
     flex-direction: column;
     text-align: center;
   }
@@ -451,6 +451,7 @@ footer {
   /************MANGA***************/
   .mangaImg {
     width: 300px;
+    margin: auto;
     margin-bottom: 10px;
   }
   .mangaContenedor {

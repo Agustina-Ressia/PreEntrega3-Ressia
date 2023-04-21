@@ -459,7 +459,7 @@ footer {
   }
   /************ANIME***************/
   .temporada {
-    width: 400px;
+    width: 95%;
     justify-content: center;
   }
   .anime {
@@ -470,7 +470,7 @@ footer {
     margin: 20px;
   }
   .animeImg img {
-    width: 350px;
+    width: 95%;
     margin-bottom: 10px;
   }
 }

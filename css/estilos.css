@@ -413,7 +413,7 @@ footer {
   }
   .autorInfo {
     margin: 8%;
-    width: 420px;
+    width: 95%;
     justify-content: center;
     flex-direction: column;
   }
@@ -423,7 +423,7 @@ footer {
   }
   .otrosTrabajos {
     margin: 8%;
-    width: 420px;
+    width: 95%;
     flex-direction: column;
   }
   .otrosTrabajos p {

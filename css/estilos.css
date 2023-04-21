@@ -231,7 +231,8 @@ nav a {
 
 .gridManga img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .primerManga {
@@ -433,15 +434,13 @@ footer {
   .cuadroPersonaje {
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    width: 95%;
   }
   .Personajes {
-    width: 600px;
     margin: 10%;
     flex-direction: column;
   }
   .personajes {
-    width: 600px;
     margin: 10%;
     flex-direction: column;
   }
